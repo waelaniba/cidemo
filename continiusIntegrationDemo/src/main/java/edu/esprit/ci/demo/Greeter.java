@@ -8,4 +8,10 @@ public class Greeter {
 
 	}
 
+	public String sayGoodBye(String name) {
+
+		return "GoogBye " + name;
+
+	}
+
 }

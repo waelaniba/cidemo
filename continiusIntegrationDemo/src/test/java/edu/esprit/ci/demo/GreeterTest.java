@@ -1,7 +1,5 @@
 package edu.esprit.ci.demo;
 
-import static org.junit.Assert.fail;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -17,10 +15,17 @@ public class GreeterTest {
 	}
 
 	@Test
-	public void test() {
-		
+	public void itShouldSayHello() {
+
 		Assert.assertEquals("Hello world", greeter.sayHello("world"));
-		
+
+	}
+
+	@Test
+	public void itShouldSayGoodBye() {
+
+		Assert.assertEquals("GoodBye world", greeter.sayGoodBye("world"));
+
 	}
 
 }
